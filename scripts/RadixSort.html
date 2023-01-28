@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+    
+            <link rel="stylesheet" href="https://static-fastly.hackerearth.com/static/base/base_common_combined.022f85fb81e1.css"/>
+            <link rel="stylesheet" href="https://static-fastly.hackerearth.com/static/base/marketing_footer.20caf7067b08.css"/>
+            <link rel="stylesheet" href="https://static-fastly.hackerearth.com/static/js/tooltip/tipTip.4cc4f68d44b4.css"/>
+            <link rel="stylesheet" href="https://static-fastly.hackerearth.com/static/offline/offline-theme-slide.12bc3d4c96b4.css"/>
+            <link rel="stylesheet" href="https://static-fastly.hackerearth.com/static/css/font-awesome-4.7.0/css/font-awesome.min.269550530cc1.css"/>
+            <link rel="stylesheet" href="https://static-fastly.hackerearth.com/static/css/opensans/opensans.06e0aa7529dc.css"/>
+            <link rel="stylesheet" href="https://static-fastly.hackerearth.com/static/css/proxima-nova/proxima-nova.61f8e8377456.css"/>
+            <link rel="stylesheet" href="https://static-fastly.hackerearth.com/static/css/hack/hack.8b30169f8a8b.css"/>
+            <link rel="stylesheet" href="https://static-fastly.hackerearth.com/static/css/unicons.9eda5fc182c1.css"/>
+        
+        <!-- Store CSRF_COOKIE -->
+        <script>
+            var CSRF_COOKIE_USED = "True";
+            var CSRF_COOKIE = "UFPqCOAOp6ITTVXtTt7m0LZxu3ZVvaDZabjSMCQRskfT9pOuhWUotzSvOJ50Z5Os";
+        </script>
+
+        
+<link rel="stylesheet" href="https://static-fastly.hackerearth.com/static/problems/visualizer/JSAV.7722b5261838.css"/>
+<link rel="stylesheet" href="https://static-fastly.hackerearth.com/static/problems/visualizer/odsaAV-min.f59df422de76.css"/>
+<link rel="stylesheet" href="https://static-fastly.hackerearth.com/static/problems/visualizer/odsaStyle-min.0ddc3a3f99a8.css"/>
+<link rel="stylesheet" href="https://static-fastly.hackerearth.com/static/problems/visualizer/radix-sort.d41d8cd98f00.css"/>
+<link rel="stylesheet" href="https://static-fastly.hackerearth.com/static/hackathon/problem1.a84343be1675.css"/>
+<link rel="stylesheet" href="https://static-fastly.hackerearth.com/static/problems/practice_track1.327157164333.css"/>
+<link rel="stylesheet" href="https://static-fastly.hackerearth.com/static/problems/visualizer/visualizer.2ffb0f67c548.css"/>
+
+
+    <body >
+        
+                    
+                    
+
+            
+    
+    
+<div class="layout-container">
+    <div class="gray-wide-container problem-track">
+        <div class="breadcrumb dark small no-margin">
+        </div>
+
+        <div class="right-section">
+            <div class="right-section-header">
+                <h1 class="dark no-margin larger-24 weight-600">Radix Sort</h1>
+                <ul class="no-list-style caps weight-700 regular tutorial-problems-tab tab-underline-blue">
+                    <li class="tab">
+                        <span class="tab-name tab-dark inline-block no-underline selected">Visualizer</span>
+                    </li>
+                    <li class="clear"></li>
+                </ul>
+            </div>
+            <div class="right-section-content darker regular tutorial">
+                
+                <div id="container" class="medium-margin">
+                    <form id="ssperform">
+                        <div class="legend">
+                            <div class="regular dark legend-text caps weight-600 larger">Inputs</div>
+                            <div class="margin-bottom-15">
+                                <label id="arraysizeLabel" for="arraysize" class="dark large label weight-600">Array size: </label>
+                                <select id="arraysize" class="nice-select margin-right-15"></select>
+                            </div>
+                            <div class="margin-bottom-15">
+                                <label id="digitsLabel" for="digitsize" class="dark large label weight-600">Number of digits:</label>
+                                <select id="digitsize" class="nice-select margin-right-15">
+                                    <option value="1"> 1 </option>
+                                    <option selected="selected" value="2"> 2 </option>
+                                    <option value="3"> 3 </option>
+                                    <option value="4"> 4 </option>
+                                </select>
+                            </div>
+                            <div class="wrapper">
+                                <span class="dark large label weight-600">Array Values<span class="light small">:</span></span>
+                                <input size="60" name="arrayValues" id="arrayValues" type="text" />
+                            </div>
+                            <div class="wrapper">
+                                <div class="label float-lef"></div>
+                                <div class="less-margin-2 inline-block">
+                                    <input id="run" type="button" name="run" value="Run" class="button btn-blue btn-small">
+                                    <input id="reset" type="button" name="reset" value="Reset" class="button reset-button hidden">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="standard-margin legend-av" id="av-output">
+                        <div class="legend-text caps weight-600">Visualize</div>
+                        <div class="avcontainer">
+                        </div>
+                        <!--avcontainer-->
+                        <div class="controler-container">
+                            <div class="jsavoutput jsavline dark regular">
+                            </div>
+                            <div class="jsavcontrols dark">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--container-->
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+
+
+
+
+
+
+
+        <!-- All the scripts go here -->
+        <script>
+            
+            var CURRENT_PATH = "https://www.hackerearth.com/practice/algorithms/sorting/radix-sort/visualize/";
+            var HISTORY = '';
+            var DEFAULT_REAL_NUMBER_PRECISION = 2;
+            var DECIMAL_PRECISION_ERROR_TEXT = "Only {decimal_limit} decimal places allowed";
+            var SOMETHING_WENT_WRONG_ERROR_TEXT = "Something went wrong. Please try again later.";
+  </script>
+
+        
+        <script type="text/javascript" src="https://static-fastly.hackerearth.com/static/js/alljs.e62cdf3e0175.js" crossorigin="anonymous" ></script>
+        <script type="text/javascript" src="https://static-fastly.hackerearth.com/static/base/base1.0.1.abc31cca3b81.js" crossorigin="anonymous" ></script>
+        <script type="text/javascript" src="https://static-fastly.hackerearth.com/static/bigpipe/bigpipe.c6f19f153efc.js" crossorigin="anonymous" ></script>
+        
+
+
+        
+<script>
+    // firestore credentials
+    var firebaseConfig = {
+        apiKey:'AIzaSyD7oH2r4iyvysFx47-IVwrzdwIuw7Ici90',
+        authDomain:'he-production.firebaseapp.com',
+        databaseURL:'https://he-production.firebaseio.com',
+        projectId:'he-production',
+        storageBucket:'he-production.appspot.com',
+        messagingSenderId:'100736274227',
+        appId:'1:100736274227:web:fdd60d6929555af4d3b846'
+    };
+    window.firebaseConfig = firebaseConfig;
+</script>
+
+          
+<script type="text/javascript" src="https://static-fastly.hackerearth.com/static/problems/visualizer/jquery.transit.839e1a26ca64.js" crossorigin="anonymous" ></script>
+<script type="text/javascript" src="https://static-fastly.hackerearth.com/static/problems/visualizer/raphael.b18c039d9b1e.js" crossorigin="anonymous" ></script>
+<script type="text/javascript" src="https://static-fastly.hackerearth.com/static/problems/visualizer/JSAV-min.06bf2590c25a.js" crossorigin="anonymous" ></script>
+<script type="text/javascript" src="https://static-fastly.hackerearth.com/static/problems/visualizer/odsaUtils.d2dc8f0aa612.js" crossorigin="anonymous" ></script>
+<script type="text/javascript" src="https://static-fastly.hackerearth.com/static/problems/visualizer/odsaAV.b4d88bd8e342.js" crossorigin="anonymous" ></script>
+<script type="text/javascript" src="https://static-fastly.hackerearth.com/static/problems/visualizer/radix-sort.c00bc56abe10.js" crossorigin="anonymous" ></script>
+<script type="text/javascript" src="https://static-fastly.hackerearth.com/static/problems/problem_topic.019e7b6e4cfa.js" crossorigin="anonymous" ></script>
+
+
+<script type="text/javascript" src="C:\Users\Pranali\Desktop\ALGORITHM VISUALIZER\scripts\RadixSort.js"></script>
+    </body>
+</html>
